@@ -4,7 +4,7 @@
 # This price is multiplied the number of mega-cycles (i.e. million RISC-V cycles) that the requested
 # execution took, as calculated by running the request in preflight. This is one of the inputs to
 # decide the minimum price to accept for a request.
-mcycle_price = "0"
+mcycle_price = "0.001"
 # Mega-cycle price, denominated in the Boundless collateral token.
 #
 # Similar to the mcycle_price option above. This is used to determine the minimum price to accept an
@@ -34,7 +34,7 @@ peak_prove_khz = 8000
 # Optional max cycles (in mcycles)
 #
 # Orders over this max_cycles will be skipped after preflight
-max_mcycle_limit = 8000
+max_mcycle_limit = 50000
 # Max journal size in bytes
 #
 # Orders that produce a journal larger than this size in preflight will be skipped. Since journals
